@@ -1,0 +1,24 @@
+# Python - OOP (Object oriented programming)
+
+class Employee:
+
+    def __init__(self, first, last, pay):
+        self.first = first
+        self.last = last
+        self.pay = pay
+        self.email = first + '.' + last + '@company.com'
+        
+    def fullName(self):
+        return '{} {}'.format(self.first, self.last)
+            
+        
+emp_1 = Employee('Steven', 'Gerrard', 25000)
+emp_2 = Employee('Luis', 'Suarez', 60000)
+emp_3 = Employee('James', 'Milner', 150000)
+
+print(emp_1.fullName())
+print(emp_2.fullName())
+print(emp_3.fullName())
+
+
+
